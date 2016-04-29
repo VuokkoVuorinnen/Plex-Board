@@ -4,24 +4,36 @@
 html, body {
   height: 100%;
 }
-// .table th, .table td { 
-//     border-top: none !important; 
-// }
- 
+
 body {
-    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+  padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
-
-
-.thumbnail img {
-    width: 100%;
-}
-
 
 pre {
   background-color: #eee;
   padding: 10px;
   font-size: 11px;
+}
+
+#wrap {
+  min-height: 100%;
+}
+
+#main {
+  overflow:auto;
+  padding-bottom:75px; /* this needs to be bigger than footer height*/
+}
+
+.footer {
+  position: relative;
+  margin-top: -70px; /* negative value of footer height */
+  height: 70px;
+  clear:both;
+  padding-top:20px;
+}
+
+.thumbnail img {
+    width: 100%;
 }
 
 #notice {
@@ -59,36 +71,21 @@ pre {
 }
 
 .services_link {
-  color: #000;
+  @extend a;
+  color: black;
 }
 
 .services_link:focus {
-  color: #777;
+  @extend a;
+  color: dimgrey;
   text-decoration: none;
 }
 
 .services_link:hover {
-  color: #777;
+  @extend a;
+  color: dimgrey;
   text-decoration: none;
 }
-
-
-#wrap {
-  min-height: 100%;
-}
-
-#main {
-  overflow:auto;
-  padding-bottom:75px; /* this needs to be bigger than footer height*/
-}
-
-.footer {
-  position: relative;
-  margin-top: -70px; /* negative value of footer height */
-  height: 70px;
-  clear:both;
-  padding-top:20px;
-} 
 
 
 

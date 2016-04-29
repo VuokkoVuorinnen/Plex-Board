@@ -21,6 +21,7 @@ gem 'sass', '~> 3.4.19'
 gem 'execjs', '~> 2.6.0'
 gem 'parallel', '~> 1.6.1'
 gem 'rake', '~> 10.4.2'
+gem 'bootswatch-rails', '~> 3.3.5'
 
 group :development, :test do
   gem 'spring', '~> 1.4.0'
